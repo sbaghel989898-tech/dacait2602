@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yay! 💕</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <img
+      src="assets/gifs/idk.gif"
+      alt=""
+      style="
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 110%;
+        object-fit: cover;
+        z-index: 0;
+      "
+    />
+    <div class="hearts"></div>
+    <div class="confetti" id="confetti"></div>
+
+    <div class="container">
+      <h1 style="font-size: 30px">Yay! 🩷</h1>
+      <p style="font-size: 16px; margin-top: 10px">
+        Thank you Priyaaa, this means everything.<br />
+        Chal ab pehle jaisi baatein karte hain 🥹
+      </p>
+      <div style="font-size: 50px; margin-top: 20px">🥹🎉💗</div>
+    </div>
+
+    <script>
+      const c = document.getElementById("confetti");
+      const emojis = ["🎉", "💗", "✨", "🩷", "💕"];
+      for (let i = 0; i < 26; i++) {
+        const s = document.createElement("span");
+        s.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        s.style.left = Math.random() * 100 + "%";
+        s.style.animationDuration = 2.5 + Math.random() * 2.5 + "s";
+        s.style.animationDelay = Math.random() * 1.5 + "s";
+        s.style.fontSize = 14 + Math.random() * 16 + "px";
+        c.appendChild(s);
+      }
+    </script>
+  </body>
+</html>

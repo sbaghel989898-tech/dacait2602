@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Priyaaa ❤️</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="hearts"></div>
+
+    <div class="container">
+      <img src="assets/gifs/gun.gif" class="cat" alt="cute" />
+
+      <h1>Hey Priyaaa 🌸</h1>
+
+      <p>
+        I made something just for you.<br />
+        Please see it till the end. 🥹
+      </p>
+
+      <div class="buttons">
+        <button class="btn yes" onclick="showGift()">YES 💖</button>
+        <button class="btn no" id="noBtn">NO 💔</button>
+      </div>
+    </div>
+
+    <!-- Gift Popup -->
+    <div id="giftBox" class="popup">
+      <div class="container">
+        <img
+          src="assets/gifs/gift.gif"
+          class="gift"
+          alt="gift"
+          onclick="openLetter()"
+        />
+
+        <h2>🎁 A Gift For You</h2>
+
+        <p style="margin-bottom: 10px">Tap the Gift to Open ❤️</p>
+
+        <button class="btn" onclick="openLetter()">Open Gift</button>
+      </div>
+    </div>
+
+    <script src="js/surprise.js"></script>
+  </body>
+</html>

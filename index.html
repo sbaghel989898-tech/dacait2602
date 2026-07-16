@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💖 A Special Surprise 💖</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="hearts"></div>
+
+    <div class="container">
+      <!-- Replace with your GIF -->
+      <img src="assets/gifs/c.gif" class="cat" alt="cat" />
+
+      <h2>Hey Priyaaa 🌸</h2>
+
+      <p class="subtitle">I made something for u...<br /></p>
+
+      <p class="hint">📆 DD/MM</p>
+
+      <input type="password" id="password" readonly />
+
+      <div class="keypad">
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+
+        <button class="blank" disabled>&nbsp;</button>
+        <button onclick="press('0')">0</button>
+        <button onclick="clearPass()">⌫</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
